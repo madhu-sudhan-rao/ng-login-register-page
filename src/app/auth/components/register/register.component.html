@@ -1,0 +1,43 @@
+<main class="register-container">
+    <div class="register-card">
+      <header >
+        <span class="title">Register</span>
+      </header>
+      <section class="">
+        <form class="" [formGroup]="registerForm">
+          <div class="input-row">
+              <div class="label">
+                <label class="col-form-label" for="name">Name</label>
+              </div>
+              <div class="input-field">
+                <input type="text" class="form-control" formControlName="name" id="name" placeholder="Enter your name"/>
+              </div>
+          </div>
+          <div class="input-row">
+              <div class="label">
+                <label class="col-form-label" for="email">Email</label>
+              </div>
+              <div class="input-field">
+                <input type="text" class="form-control" formControlName="email" id="email" placeholder="Enter your email"/>
+              </div>
+          </div>
+          <div class="input-row">
+              <div class="label">
+                <label class="col-form-label" for="password">Password</label>
+              </div>
+              <div class="input-field">
+                <input type="password" class="form-control" formControlName="password" id="password" placeholder="Enter your password" />
+              </div>
+          </div>
+  
+          <div>
+              <button type="button" (click)="onSubmit()">Register</button>
+          </div>
+        </form>
+      </section>
+      <footer>
+          <p>Already have an account? <span (click)="toLoginPage()" >Login</span></p>
+      </footer>
+    </div>
+  </main>
+  

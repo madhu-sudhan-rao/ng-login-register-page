@@ -1,0 +1,112 @@
+.register-container {
+    background: hsl(47, 88%, 63%);
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+
+    .register-card {
+        background-color: hsl(0, 0%, 100%);
+        border: 1px solid hsl(0, 0%, 7%);
+        border-radius: 1rem;
+        padding: 2rem;
+        height: 500px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 5px 5px 0px hsl(0, 0%, 7%);
+
+
+        header {
+            span.title {
+
+                font-weight: 800;
+                font-size: 36px;
+            }
+        }
+
+
+        section form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+
+            .input-row {
+                .label {
+                    label {
+                        font-size: 16px ;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            div button {
+                width: 250px;
+                height: 40px;
+                background-color: #000;
+                color: #FFF;
+                border: 2px solid #000;
+                border-radius: 4px;
+                font-weight: 800;
+
+                
+                &:hover {
+                    background-color: #2d2d2d;
+                    border: 2px solid #2d2d2d;
+                }
+            }
+        }
+
+        footer {
+            p {
+                font-size: 11px;
+                text-align: left;
+                margin-top: .5rem;
+                font-weight: 500;
+
+                span {
+                    color: hsl(47, 97%, 52%);
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+// To override the styles of bootstrap
+::ng-deep {
+    .col-form-label {
+        padding-bottom: 0px;
+    }
+
+    .input-row .input-field {
+        
+        .form-control {
+            display: block;
+            width: 250px;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: var(--bs-body-color);
+            appearance: none;
+            background-color: var(--bs-body-bg);
+            background-clip: padding-box;
+            border: 2px solid var(--bs-border-color);
+            border-radius: 5px;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            
+            &:hover {
+                border: 2px solid #000;
+    
+            }
+    
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}
